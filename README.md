@@ -1,23 +1,41 @@
-Sistem Gestiune Sala Sport este o aplicație de consolă dezvoltată în C++ care permite administrarea eficientă a bazei de date a unei săli de fitness. Proiectul simulează fluxul real de lucru al unei recepții, de la înregistrarea membrilor până la monitorizarea valabilității abonamentelor.
-Managementul Clienților: Adăugarea membrilor noi și stocarea lor într-o bază de date dinamică.
+Pentru un fișier README.md de pe GitHub, textul trebuie să fie clar, bine structurat (folosind Markdown) și să conțină elemente vizuale (emoji-uri, liste, blocuri de cod) pentru a fi ușor de parcurs de către profesor.
 
-Tipuri de Abonamente: Utilizatorii pot alege între trei categorii de membru: SpartanPlatinum, Spartan și Luptator.
+Iată conținutul complet pe care trebuie să îl pui în fișierul tău README.md. Poți da copy-paste direct:
 
-Sistem de Fișiere Extern: * Regulament.txt: Citirea și afișarea regulamentului sălii la pornirea aplicației.
+🏋️‍♂️ Sistem Gestiune Sală Sport "Spartan"
+Acest proiect reprezintă o aplicație de tip consolă realizată în C++, destinată eficientizării proceselor administrative dintr-o sală de sport. Sistemul gestionează baza de date a clienților, monitorizează valabilitatea abonamentelor și oferă o interfață intuitivă pentru recepție.
 
-Beneficii.txt: Panou informativ dinamic cu avantajele fiecărui tip de abonament.
+📝 Descrierea Problemei
+Programul rezolvă necesitatea monitorizării fluxului de clienți și a statusului abonamentelor într-un mediu digital. Acesta automatizează calculul zilelor rămase și oferă o evidență clară asupra veniturilor potențiale prin categorisirea abonamentelor.
 
-Simulare Timp (Time Skip): O funcție inovatoare de accelerare a timpului pentru a testa expirarea automată a abonamentelor și validitatea logică a sistemului.
+📥 Date de Intrare
+Sistemul procesează următoarele tipuri de date:
 
-Monitorizare Status: Filtrare rapidă pentru vizualizarea clienților cu abonamente active vs. istoricul complet.
+Fișiere Text (.txt):
 
-Reactivare: Posibilitatea de a prelungi abonamentele expirate direct prin ID-ul unic al clientului.
-Encapsulare: Utilizarea claselor (Data, Abonament, Client, SalaSport) pentru a proteja datele private.
+Regulament.txt: Conține regulile interioare afișate la pornirea aplicației.
 
-Rule of Three: Implementarea manuală a Constructorului de Copiere, Operatorului de Atribuire (=) și a Destructorului pentru gestionarea sigură a memoriei (alocare dinamică pentru bazaDate).
+Beneficii.txt: Panou informativ cu avantajele specifice fiecărui tip de abonament.
 
-Supraîncărcarea Operatorilor: Folosirea operator<< pentru afișarea directă a obiectelor în consolă.
+Date de la tastatură:
 
-Compoziție: Clasa Client înglobează obiecte de tip Data și Abonament.
+Identificare: Numele clientului (șir de caractere).
 
-Pointeri și Memorie Dinamică: Gestionarea bazei de date folosind alocare pe Heap pentru a permite scalabilitatea.
+Configurare: Selecția tipului de abonament (1. Platinum, 2. Spartan, 3. Luptător).
+
+Simulare: Numărul de zile scurse pentru testarea logicii de expirare.
+
+⚙️ Operații Posibile
+Utilizatorul poate efectua următoarele acțiuni prin intermediul meniului principal:
+
+Adăugare Client: Înregistrarea unui membru nou și atribuirea automată a unui ID unic.
+
+Căutare după ID: Verificarea rapidă a datelor unui client și a zilelor rămase.
+
+Filtrare Activi: Afișarea exclusivă a clienților care dețin un abonament valid.
+
+Istoric Complet: Vizualizarea tuturor persoanelor înregistrate în sistem.
+
+Reactivare: Prelungirea valabilității pentru clienții ale căror abonamente au expirat.
+
+Simulare Timp: Accelerarea calendarului intern pentru a valida funcționarea corectă a sistemului de expirare.
