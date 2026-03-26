@@ -1,7 +1,3 @@
-Pentru un fișier README.md de pe GitHub, textul trebuie să fie clar, bine structurat (folosind Markdown) și să conțină elemente vizuale (emoji-uri, liste, blocuri de cod) pentru a fi ușor de parcurs de către profesor.
-
-Iată conținutul complet pe care trebuie să îl pui în fișierul tău README.md. Poți da copy-paste direct:
-
 🏋️‍♂️ Sistem Gestiune Sală Sport "Spartan"
 Acest proiect reprezintă o aplicație de tip consolă realizată în C++, destinată eficientizării proceselor administrative dintr-o sală de sport. Sistemul gestionează baza de date a clienților, monitorizează valabilitatea abonamentelor și oferă o interfață intuitivă pentru recepție.
 
