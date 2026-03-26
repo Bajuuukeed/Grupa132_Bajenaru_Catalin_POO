@@ -220,14 +220,16 @@ public:
         std::cout << "Abonamente active";
         std::cout << std::endl;
         for (int i = 0; i < nr; i++) {
-            if (bazaDate[i].getZileRamase(ziSistem, lunaSistem) > 0) afisareStatus(bazaDate[i]);
+            if (bazaDate[i].getZileRamase(ziSistem, lunaSistem) > 0)
+                afisareStatus(bazaDate[i]);
         }
     }
     void istoric() const {
         std::cout << std::endl;
         std::cout << "Istoric Clienti";
         std::cout << std::endl;
-        for (int i = 0; i < nr; i++) afisareStatus(bazaDate[i]);
+        for (int i = 0; i < nr; i++)
+            afisareStatus(bazaDate[i]);
     }
 };
 int main() {
