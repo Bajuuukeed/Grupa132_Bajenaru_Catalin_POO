@@ -1,13 +1,16 @@
 🏋️‍♂️ Spartan Gym Management System
 Sistem de gestiune tip consolă pentru administrarea eficientă a unei săli de sport. Aplicația permite monitorizarea clienților, gestionarea plăților și automatizarea verificării valabilității abonamentelor.
+
 📝 Descrierea Proiectului
 Proiectul rezolvă problema evidenței manuale a clienților într-o sală de fitness. Acesta oferă o soluție digitală pentru recepție, capabilă să calculeze automat data de expirare a serviciilor și să aplice politici de fidelizare (reduceri la reactivare).
+
 🛠️ Structura Codului 
 Programul este construit folosind principii de programare orientată pe obiecte, având următoarea ierarhie:
 Clasa Data: Gestionează calendarul intern al sălii și formatarea datelor calendaristice.
 Clasa Abonament: Încapsulează detaliile despre tipul de serviciu, preț și logica de reducere.
 Clasa Client: Reunește datele de identificare cu obiectul de tip abonament.
 Clasa SalaSport: Clasa care gestionează vectorul de clienți și interacțiunea cu fișierele externe.
+
 ⚙️ Funcționalități
 1. Gestiune Clienți
 Adăugare: Înregistrare nume și alegere tip abonament:
