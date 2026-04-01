@@ -1,37 +1,24 @@
-🏋️‍♂️ Sistem Gestiune Sală Sport "Spartan"
-Acest proiect reprezintă o aplicație de tip consolă realizată în C++, destinată eficientizării proceselor administrative dintr-o sală de sport. Sistemul gestionează baza de date a clienților, monitorizează valabilitatea abonamentelor și oferă o interfață intuitivă pentru recepție.
-
-📝 Descrierea Problemei
-Programul rezolvă necesitatea monitorizării fluxului de clienți și a statusului abonamentelor într-un mediu digital. Acesta automatizează calculul zilelor rămase și oferă o evidență clară asupra veniturilor potențiale prin categorisirea abonamentelor.
-
-📥 Date de Intrare
-Sistemul procesează următoarele tipuri de date:
-
-Fișiere Text (.txt):
-
-Regulament.txt: Conține regulile interioare afișate la pornirea aplicației.
-
-Beneficii.txt: Panou informativ cu avantajele specifice fiecărui tip de abonament.
-
-Date de la tastatură:
-
-Identificare: Numele clientului (șir de caractere).
-
-Configurare: Selecția tipului de abonament (1. Platinum, 2. Spartan, 3. Luptător).
-
-Simulare: Numărul de zile scurse pentru testarea logicii de expirare.
-
-⚙️ Operații Posibile
-Utilizatorul poate efectua următoarele acțiuni prin intermediul meniului principal:
-
-Adăugare Client: Înregistrarea unui membru nou și atribuirea automată a unui ID unic.
-
-Căutare după ID: Verificarea rapidă a datelor unui client și a zilelor rămase.
-
-Filtrare Activi: Afișarea exclusivă a clienților care dețin un abonament valid.
-
-Istoric Complet: Vizualizarea tuturor persoanelor înregistrate în sistem.
-
-Reactivare: Prelungirea valabilității pentru clienții ale căror abonamente au expirat.
-
-Simulare Timp: Accelerarea calendarului intern pentru a valida funcționarea corectă a sistemului de expirare.
+🏋️‍♂️ Spartan Gym Management System
+Sistem de gestiune tip consolă pentru administrarea eficientă a unei săli de sport. Aplicația permite monitorizarea clienților, gestionarea plăților și automatizarea verificării valabilității abonamentelor.
+📝 Descrierea Proiectului
+Proiectul rezolvă problema evidenței manuale a clienților într-o sală de fitness. Acesta oferă o soluție digitală pentru recepție, capabilă să calculeze automat data de expirare a serviciilor și să aplice politici de fidelizare (reduceri la reactivare).
+🛠️ Structura Codului 
+Programul este construit folosind principii de programare orientată pe obiecte, având următoarea ierarhie:
+Clasa Data: Gestionează calendarul intern al sălii și formatarea datelor calendaristice.
+Clasa Abonament: Încapsulează detaliile despre tipul de serviciu, preț și logica de reducere.
+Clasa Client: Reunește datele de identificare cu obiectul de tip abonament.
+Clasa SalaSport: Clasa care gestionează vectorul de clienți și interacțiunea cu fișierele externe.
+⚙️ Funcționalități
+1. Gestiune Clienți
+Adăugare: Înregistrare nume și alegere tip abonament:
+Luptător
+Spartan
+Spartan Platinum
+Căutare: Identificarea rapidă după ID-ul unic generat la înscriere.
+Filtrare: Vizualizarea listei de clienți care au acces permis în prezent.
+2. Controlul Timpului
+Spre deosebire de o aplicație reală care preia data din sistem, acest program permite utilizatorului să "sară" peste un număr de zile pentru a vedea cum statusul unui client se schimbă din ACTIV în EXPIRAT.
+3. Integrare Fișiere
+Aplicația încarcă dinamic date din:
+Regulament.txt - Afișat la pornire.
+Beneficii.txt - Detalii despre facilitățile fiecărui tip de abonament.
