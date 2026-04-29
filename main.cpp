@@ -1,5 +1,5 @@
 #include "SalaSport.h"
-#include <limits> // Necesar pentru numeric_limits
+#include <limits>
 
 int main() {
     SalaSport sala;
@@ -17,8 +17,8 @@ int main() {
                     if (sub == 1) {
                         std::string n; int t;
                         std::cout << "Nume complet: ";
-                        std::cin.get(); // Consumă newline-ul rămas în buffer
-                        std::getline(std::cin, n); // Citește "Bajenaru Catalin" corect
+                        std::cin.get();
+                        std::getline(std::cin, n);
 
                         std::cout << "Tip (1-Platinum, 2-Spartan, 3-Luptator): ";
                         std::cin >> t;
