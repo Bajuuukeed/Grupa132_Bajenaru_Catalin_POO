@@ -1,27 +1,22 @@
-🏋️‍♂️ Spartan Gym Management System
-Sistem de gestiune tip consolă pentru administrarea eficientă a unei săli de sport. Aplicația permite monitorizarea clienților, gestionarea plăților și automatizarea verificării valabilității abonamentelor.
+Funcționalități Cheie
+Interfață Dual-Tab: Organizarea meniului în două secțiuni distincte pentru o navigare intuitivă: Gestiune (operațiuni clienți) și Timp (configurări sistem).
 
-📝 Descrierea Proiectului
-Proiectul rezolvă problema evidenței manuale a clienților într-o sală de fitness. Acesta oferă o soluție digitală pentru recepție, capabilă să calculeze automat data de expirare a serviciilor și să aplice politici de fidelizare (reduceri la reactivare).
+Managementul Clienților: Înregistrarea membrilor cu nume complet (suport pentru spații) și atribuirea automată de ID-uri unice.
 
-🛠️ Structura Codului 
-Programul este construit folosind principii de programare orientată pe obiecte, având următoarea ierarhie:
-Clasa Data: Gestionează calendarul intern al sălii și formatarea datelor calendaristice.
-Clasa Abonament: Încapsulează detaliile despre tipul de serviciu, preț și logica de reducere.
-Clasa Client: Reunește datele de identificare cu obiectul de tip abonament.
-Clasa SalaSport: Clasa care gestionează vectorul de clienți și interacțiunea cu fișierele externe.
+Ierarhie de Abonamente: Utilizarea a trei categorii polimorfice: SpartanPlatinum, Spartan și Luptator, fiecare cu structuri de preț specifice.
 
-⚙️ Funcționalități
-1. Gestiune Clienți
-Adăugare: Înregistrare nume și alegere tip abonament:
-Luptător
-Spartan
-Spartan Platinum
-Căutare: Identificarea rapidă după ID-ul unic generat la înscriere.
-Filtrare: Vizualizarea listei de clienți care au acces permis în prezent.
-2. Controlul Timpului
-Spre deosebire de o aplicație reală care preia data din sistem, acest program permite utilizatorului să "sară" peste un număr de zile pentru a vedea cum statusul unui client se schimbă din ACTIV în EXPIRAT.
-3. Integrare Fișiere
-Aplicația încarcă dinamic date din:
-Regulament.txt - Afișat la pornire.
-Beneficii.txt - Detalii despre facilitățile fiecărui tip de abonament.
+Simulare Timp (Time Skip): Funcție de accelerare a timpului ce permite verificarea statusului de valabilitate și testarea logicii de expirare automată după 30 de zile.
+
+Sistem de Fidelizare: Calcul automat al reducerilor de 10% pentru membrii care își reactivează abonamentul într-un interval de maximum 90 de zile de la data expirării.
+
+Validare Calendaristică: Protecție integrată împotriva datelor invalide (ex: împiedică setarea zilei de 29 februarie în ani nebisecți).
+Concepte OOP și Tehnice Implementate
+Polimorfism Dinamic: Utilizarea funcțiilor virtuale și a clasei abstracte de bază pentru gestionarea diferitelor tipuri de abonamente prin pointeri de bază.
+
+Smart Pointers (std::unique_ptr): Gestionarea modernă a memoriei pentru a elimina riscul de memory leaks și pentru a asigura transferul sigur de proprietate al obiectelor.
+
+Copy-and-Swap Idiom: Implementarea robustă a constructorului de copiere și a operatorului de atribuire pentru a garanta integritatea datelor în timpul manipulării obiectelor Client.
+
+Gestiunea Excepțiilor: Arhitectură bazată pe try-catch și clase de excepții custom pentru tratarea erorilor de logică (ID-uri inexistente, date nesetate sau input-uri invalide).
+
+Calcul Temporal de Precizie: Utilizarea bibliotecii <ctime> pentru a calcula diferențe exacte de timp între activări și reactivări, transformând secundele în zile de valabilitate.
