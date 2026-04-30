@@ -1,6 +1,5 @@
 #ifndef CLIENT_H
 #define CLIENT_H
-
 #include "Abonament.h"
 #include <ctime>
 #include <string>

@@ -1,3 +1,37 @@
+Programul folosește polimorfismul pentru a trata diferit trei tipuri de experiențe pentru clienți:
+Spartan Standard: Opțiunea de bază.
+Spartan Platinum: Un abonament premium care are o reducere de 10% inclusă direct în prețul de listă.
+Luptător: O variantă simplificată și mai ieftină. 
+
+Motorul Temporal (Simularea Timpului)
+   Aceasta este partea cea mai inovatoare a programului tău. Deoarece un abonament expiră în viața reală după 30 de zile, programul tău permite administratorului să "păcălească" timpul:
+
+Poți seta o dată de start (ex: 1 Ianuarie).
+
+Poți avansa timpul cu un număr de zile (ex: +45 de zile).
+
+Sistemul recalculează automat statusul fiecărui client, marcându-i ca [ACTIV] sau [EXPIRAT] în funcție de noua dată a sistemului.
+
+Sistemul de Fidelizare (Regula celor 90 de zile)
+   Programul tău implementează o politică de marketing inteligentă pentru a readuce clienții la sală:
+
+Dacă un client vine să își reactiveze abonamentul în mai puțin de 90 de zile de la expirare, sistemul îi aplică automat o reducere suplimentară de 10% la prețul final.
+
+Dacă trece mai mult de 90 de zile, reducerea se pierde, penalizând absența îndelungată.
+
+Siguranță și Integritate (Excepțiile)
+   Programul este "blindat" împotriva utilizării greșite:
+
+Prevenție: Nu poți adăuga clienți dacă nu ai setat mai întâi data curentă.
+
+Validare: Nu poți introduce date calendaristice care nu există (ex: 30 Februarie).
+
+Identificare: Nu poți modifica sau căuta un client care nu există (eroare de ID).
+Fiecare dintre aceste greșeli este prinsă și afișată elegant, fără ca programul să se blocheze.
+
+Managementul Memoriei
+   Sub capotă, programul tău este modern și eficient. Folosește Smart Pointers (unique_ptr), ceea ce înseamnă că memoria este curățată automat de fiecare dată când un client este șters sau programul se închide, eliminând riscul de "memory leaks" (scurgeri de memorie).
+
 Funcționalități Cheie
 Interfață Dual-Tab: Organizarea meniului în două secțiuni distincte pentru o navigare intuitivă: Gestiune (operațiuni clienți) și Timp (configurări sistem).
 
